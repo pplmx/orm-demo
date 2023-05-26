@@ -15,6 +15,7 @@ configurations {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -32,4 +33,10 @@ dependencies {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+    testLogging {
+        // set options for log level LIFECYCLE
+        events("passed", "skipped", "failed")
+        // show standard out and standard error of the test JVM(s) on the console
+        showStandardStreams = true
+    }
 }

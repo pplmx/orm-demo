@@ -1,9 +1,13 @@
 spring:
     datasource:
-        url: jdbc:sqlite:demo.db
+        url: jdbc:sqlite:demo.sqlite
         driver-class-name: org.sqlite.JDBC
     jpa:
         database-platform: org.hibernate.community.dialect.SQLiteDialect
         hibernate:
-            ddl-auto: update
+            ddl-auto: create-drop
         show-sql: true
+logging:
+    level:
+        org.hibernate:
+            type.descriptor.sql.BasicBinder: TRACE

@@ -5,6 +5,10 @@
 run:
 	@gradlew bootRun
 
+# test deleting objects with its next objects
+test:
+	@gradlew test
+
 # Show help
 help:
 	@echo ""
