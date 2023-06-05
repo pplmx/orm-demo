@@ -1,4 +1,4 @@
-# Using JPA to delete data from the database
+# Delete by Cascade Using Spring Data JPA
 
 ## Prerequisites
 
@@ -11,8 +11,20 @@ e.g.
 scoop install openjdk20
 ```
 
-## Run tests
+## Run the application
 
 ```shell
 make run
+
+# or
+./gradlew bootRun
+```
+
+## Run tests
+
+```shell
+make test
+
+# or
+./gradlew test
 ```
