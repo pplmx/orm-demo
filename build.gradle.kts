@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.hibernate.orm:hibernate-community-dialects:6.2.7.Final")
+    implementation("org.hibernate.orm:hibernate-community-dialects:6.6.8.Final")
     implementation("org.xerial:sqlite-jdbc:3.42.0.1")
 
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
